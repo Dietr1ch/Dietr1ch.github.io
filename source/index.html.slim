@@ -1,0 +1,39 @@
+---
+title: Welcome to Middleman (=
+layout: site
+---
+
+br
+div#Me
+  h3 Me
+  p I'm a Computer Science student at PUC Chile. I'm interested on Search and Planning, and I'm currently working on Search problems on Linked Data.
+
+  br
+  h4 Why is this site so ugly?
+  p Not my specialty. Well, at least it doesn't sport grey background with blinking gifs.
+
+
+br
+div#Research
+  h3 Research
+
+  div#LinkedData
+    h4 Linked Data
+    p I've found a way to use A* to compute Property Paths by navigating the Web of Linked Data.
+    p This slowly turned into my thesis, as exploring the problem revealed more improments to be done.
+    ul
+      li = link_to "ASLD", "research/asld/"
+
+  div#APrime
+    h4 A'
+    p I'm experimenting with a way to abstract search spaces in order to simplify search.
+    p This was the problem I originally wanted to attack during my Masters, but now I'm thankful that DB guys are not good on AI search (=
+    p When an appropiate connectivity classes are available, search can be abstracted, eliminating the need to explore huge search trees.
+    p Automatically classifying the states currently depends on a conjecture, so this is not yet useful
+
+div#CV
+  h2 CV
+  p Well, don't expect impressive grades here, I really didn't liked engineering school that much as it forced me to go through more than a few irrelevant courses, I wish that CS becomes a carreer on it's own.
+  ul
+    li = link_to "CV", "https://www.sharelatex.com/project/534b44007c24729168ed38fe/output/output.pdf?compileGroup=standard&clsiserverid=clsi2-0&popupDownload=true"
+    li = link_to "CV source", "https://www.sharelatex.com/project/534b44007c24729168ed38fe"

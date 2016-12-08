@@ -1,0 +1,161 @@
+@charset "utf-8";
+@import 'normalize';
+
+//body {
+//	background: #ECC561;
+//	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+//	font-size: 1em;
+//	text-align: center;
+//}
+//
+//.logo img {
+//  height: 18.75em;
+//  margin-top: 6em;
+//}
+//
+//h1 {
+//  color: rgba(0,0,0,0.5);
+//  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+//  font-size: 1.8em;
+//  font-weight: 400;
+//  margin: 0;
+//}
+//
+//.doc {
+//  margin: 3em 0;
+//  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+//  font-size: 1.1em;
+//  font-weight: 300;
+//
+//  a {
+//    border: 1px solid white;
+//    border-radius: 3px;
+//    padding: 0.75em 0.7em;
+//    color: white;
+//    text-decoration: none;
+//    transition: color 0.1s linear;
+//    &:hover {
+//      background: rgba(0,0,0,0.2);
+//      color: white;
+//      transition: all 0.15s linear;
+//    }
+//  }
+//}
+//
+//.welcome {
+//  -webkit-animation-name: welcome;
+//  -webkit-animation-duration: .9s;
+//}
+//
+//@-webkit-keyframes welcome {
+//  from {
+//    -webkit-transform: scale(0);
+//    opacity: 0;
+//  }
+//  50% {
+//   -webkit-transform: scale(0);
+//   opacity: 0;
+//  }
+//  82.5% {
+//    -webkit-transform: scale(1.03);
+//    -webkit-animation-timing-function: ease-out;
+//    opacity: 1;
+//  }
+//  to {
+//    -webkit-transform: scale(1);
+//  }
+//}
+/** Reset **/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	color: #fff;
+}
+
+/** Background **/
+html, body {
+	height: 100%;
+	background-color: #222;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/** Theme Styles **/
+body {
+	background-image: url("../images/cloudy-sea.jpg");
+	background-repeat:no-repeat;
+	background-position: center bottom;
+	background-size: cover;
+}
+.boostrap-row-fix {
+		padding-left: 15px;
+		padding-right: 15px;
+}
+
+
+
+
+/** Transparency **/
+.dark-transparency {
+	background: rgba(21, 21, 21, 1);
+	background: rgba(21, 21, 21, 0.7);
+}
+.medium-transparency {
+	background: rgba(21, 21, 21, 1);
+	background: rgba(21, 21, 21, 0.5);
+}
+.light-transparency {
+	background: rgba(21, 21, 21, 1);
+	background: rgba(21, 21, 21, 0.5);
+}
+
+
+.round5 {
+	/*I have the feeling that this is defined somewhere else*/
+	border-radius: 0.5em;
+}
+
+.header-padding {
+	padding-top: 1.2em;
+	padding-bottom: 1.2em;
+}
+
+#title {
+	margin: 0;
+	color: #fff;
+	font-size: 3.3em;
+	font-weight: 700;
+	text-shadow: #111 0 0 10px;
+}
+
+
+.site {
+	text-align: justify;
+}
+.left {
+	text-align: left;
+}
+.right {
+	text-align: right;
+}
+.no-h-padding {
+	padding-left: 0;
+	padding-right: 0;
+}
+.no-v-padding {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.padding-v-1em {
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+.main-borders {
+	margin-top: 2em;
+	margin-bottom: 1em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.row {
+	margin-left: 0px;
+	margin-right: 0px;
+}

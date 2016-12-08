@@ -1,0 +1,81 @@
+---
+title: Evaluating navigational queries on the Web
+datetext: Diciembre 2016
+author: Dietrich Daroch
+email: ddaroch@uc.cl
+layout: slide
+affiliation1: Departamento de Ciencia de la Computación
+affiliation2: Pontificia Universidad Católica de Chile
+---
+
+section
+  h2 Outline
+  /  -------
+  section data-transition="fade"
+    div What is this talk about?
+    /.fragment == image_tag '/images/figures/00-os-location.jpg', :width=>"50%"
+
+
+section
+  h2 Linked Data
+  /  -----------
+  section
+  section
+    p What is it?
+    ul
+      li.fragment A way to publish structured data
+      li.fragment Built over HTTP, IRI, and RDF
+
+  section
+    p Why?
+    ul
+      li.fragment Humans are capable to gather information from the web by navigating it
+      ul
+        li.fragment They get to some starting site
+        li.fragment By inspecting the site, they discover other sites
+        li.fragment and traverse those sites until they find what they wanted
+      li.fragment This differs heavily from what machines can do today
+      ul
+        li.fragment Machines do not trully understand language or the world (yet)
+        li.fragment But they are astonishingly fast and accurate on properly structured data
+
+  section
+    p Why do machines fail?
+    ul
+      li.fragment The real problem is that machines cannot traverse data.
+      ul
+        li.fragment The do know about the links, but they lack meaning for them.
+
+  section
+    p How to solve it?
+    ul
+      li.fragment Today the Web is a graph of Websites connected by hyperlinks.
+      ul
+        li.fragment But the meaning of the links is encrypted on the text and it's context.
+      li.fragment RDF sets up a framework for modeling the Web in a machine-friendly way.
+
+section
+  h2 RDF
+  /  ---
+  section
+  section
+    p It stands for <em>Resource Description Framework<em>
+    ul
+      li.fragment It describes a graph with machine identifyable nodes and links.
+
+  /section
+    p An example
+    /p Uhhm, can you explain like I'm 5?
+    ul
+      li.fragment There is no need.
+      li.fragment Let's
+
+section
+  h2 An example
+  /  ----------
+
+  section
+  section
+    p What is it?
+    ul
+      li.fragment A way to publish structured data
