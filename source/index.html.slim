@@ -1,12 +1,15 @@
 ---
-title: Welcome to Middleman (=
+title: Dietrich Daroch's Homepage
 layout: site
 ---
 
 br
 div#Me
   h3 Me
-  p I'm a Computer Science student at PUC Chile. I'm interested on Search and Planning, and I'm currently working on Search problems on Linked Data.
+  p I'm a CS grad from PUC Chile. I enjoy music, playing guitar, biking,
+  snowboarding and playing games.
+  p I'm interested on Search and Planning; Distributed Databases and CS in
+  general.
 
   br
   h4 Why is this site so ugly?
@@ -19,17 +22,28 @@ div#Research
 
   div#LinkedData
     h4 Linked Data
-    p I've found a way to use A* to compute Property Paths by navigating the Web of Linked Data.
-    p This slowly turned into my thesis, as exploring the problem revealed more improments to be done.
+    p In Linked Data navigational queries are expensive to compute as it
+    requries navigating the graph across many possibly possibly servers.
+    p We found a way to use the query itself to derive a consistent heuristic
+    that makes A* available for computing Property Paths more effectively than
+    uninformed Search Algorithms, which helps reducing the amount of nodes
+    expanded to get the answers to a given query.
     ul
       li = link_to "ASLD", "research/asld/"
 
   div#APrime
-    h4 A'
-    p I'm experimenting with a way to abstract search spaces in order to simplify search.
-    p This was the problem I originally wanted to attack during my Masters, but now I'm thankful that DB guys are not good on AI search (=
-    p When an appropiate connectivity classes are available, search can be abstracted, eliminating the need to explore huge search trees.
-    p Automatically classifying the states currently depends on a conjecture, so this is not yet useful
+    h4 Hierarchic Heuristic Search
+    p I'm experimenting with a way to abstract search spaces into a hierarchic
+    space that can provide subgoals and better heuristics.
+
+br
+div#Work
+  h3 Work
+
+  div#MTV
+    h4 Sofware Engineer
+    p I'm working at a startup to describe and search the things you can Do in
+    the Internet.
 
 div#CV
   h2 CV
