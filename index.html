@@ -1,80 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"/>
-    <title>Dietrich Daroch's Homepage</title>
-    <link href="foaf.rdf" rel="meta" title="FOAF" type="application/rdf+xml"/>
-    <link href="//fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet" type="text/css"/>
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link href="css/site.css" rel="stylesheet"/>
-    <script src="js/all.js"></script>
-  </head>
-  <body class="index">
-    <div class="site">
-      <div class="bootstrap-row-fix">
-        <header class="row dark-transparency header-padding">
-          <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
-            <h1 id="title">Dietrich Daroch</h1><a href="/">Home</a>
-          </div>
-        </header>
-      </div>
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12 medium-transparency round5 main-borders">
-            <div class="content">
-              <main>
-                <br/>
-                <div id="Me">
-                  <h3>Me</h3>
-                  <p>I'm a CS grad from PUC Chile. I enjoy music, playing guitar, biking, snowboarding and playing games.</p>
-                  <p>I'm interested on Search and Planning; Distributed Databases and CS in general.</p>
-                </div>
-                <br/>
-                <div id="Research">
-                  <h3>Research</h3>
-                  <div id="LinkedData">
-                    <h4>Linked Data</h4>
-                    <p>In Linked Data navigational queries are expensive to compute as it requries navigating the graph across many possibly possibly servers.</p>
-                    <p>We found a way to use the query itself to derive a consistent heuristic that makes A* available for computing Property Paths more effectively than uninformed Search Algorithms, which helps reducing the amount of nodes expanded to get the answers to a given query.</p>
-                    <ul>
-                      <li><a href="research/asld/">A* Star on Linked Data</a></li>
-                    </ul>
-                  </div>
-                  <div id="APrime">
-                    <h4>Hierarchic Heuristic Search</h4>
-                    <p>I'm experimenting with a way to abstract search spaces into a hierarchic space that can provide subgoals and better heuristics.</p>
-                  </div>
-                </div>
-                <br/>
-                <div id="Work">
-                  <h3>Work</h3>
-                  <div id="MTV">
-                    <h4>Sofware Engineer</h4>
-                    <p>I'm working at a startup to describe and search the things you can Do in the Internet.</p>
-                  </div>
-                </div>
-                <div id="CV">
-                  <h2>CV</h2>
-                  <ul>
-                    <li><a href="docs/cv-ddaroch.pdf">CV</a></li>
-                  </ul>
-                </div>
-              </main>
-            </div>
-        </div>
-      </div>
-      <footer class="row">
-        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12 no-h-padding">
-          <div class="left col-md-6 col-sm6 col-xs-6">
-            <p>Name.Surname (definitely not at) gmail.com</p>
-          </div>
-          <div class="right col-md-6 col-sm6 col-xs-6">
-            <p><a href="http://github.com/Dietr1ch/">github.com/Dietr1ch</a></p>
-          </div>
-        </div>
-      </footer>
-    </div>
-  </body>
+	<head>
+		<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+		<title>Dietrich Daroch's Homepage</title>
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+		<link href="style/theme.css" rel="stylesheet"/>
+
+		<link href="foaf.rdf" rel="meta" title="FOAF" type="application/rdf+xml"/>
+	</head>
+	<body class="index">
+		<div class="pure-g centered">
+			<div class="pure-u-1 pure-u-lg-3-4 site-content">
+				<div class="pure-g dark-transparency centered round5bot paddingbot">
+					<header class="pure-u-1 narrow">
+						<h1 id="title">Dietrich Daroch</h1>
+					</header>
+					<navbar class="pure-u-1 narrow">
+						<a href="/">Home</a>
+					</navbar>
+				</div>
+				<div class="pure-g dark-transparency centered round5">
+					<main class="narrow">
+						<section id="Me" class="pure-u-1">
+							<h1>About me</h1>
+							<p>I'm a Software Engineer from Chile living in the SF Bay Area. I enjoy music, playing guitar, biking, snowboarding and playing video games.</p>
+							<p>I'm interested on Search and Planning; Distributed Databases and CS in general.</p>
+							<p>I can play guitar faster than you, I can play at more than 30km/h while on my bike :P</p>
+						</section>
+						<section id="Work" class="pure-u-1">
+							<h1>Work</h1>
+							<h2>Software Engineer</h1>
+							<p>I'm working at a startup to describe and search the things you can Do in the Internet.</p>
+						</section>
+						<section id="Research" class="pure-u-1">
+							<h1>Research</h1>
+							<h2>Linked Data</h2>
+							<p>In Linked Data navigational queries are expensive to compute as it requries navigating the graph across many possibly possibly servers.</p>
+							<p>We found a way to use the query itself to derive a consistent heuristic that makes A* available for computing Property Paths more effectively than uninformed Search Algorithms, which helps reducing the amount of nodes expanded to get the answers to a given query.</p>
+							<ul>
+								<li><a href="research/asld/">A* Star on Linked Data</a></li>
+							</ul>
+							<h2>Hierarchic Heuristic Search</h2>
+							<p>I'm experimenting with a way to abstract search spaces into a hierarchic space that can provide subgoals and better heuristics.</p>
+						</section>
+						<section id="Résumé" class="pure-u-1">
+							<h1>Résumé</h1>
+							<ul>
+								<li><a href="docs/cv-ddaroch.pdf">Résumé</a></li>
+							</ul>
+						</section>
+					</main>
+				</div>
+				<div class="pure-g centered round5 paddingtop">
+					<footer class="flex narrow centered">
+						<div class="pure-u-1-12 left">
+							<a href="mailto:dietrich@daroch.me">
+								<svg aria-hidden="true" viewBox="0 0 16 16" width="16" height="16" fill="#fff">
+									<path d="M1.75 2h12.5c.966 0 1.75.784 1.75 1.75v8.5A1.75 1.75 0 0 1 14.25 14H1.75A1.75 1.75 0 0 1 0 12.25v-8.5C0 2.784.784 2 1.75 2ZM1.5 12.251c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V5.809L8.38 9.397a.75.75 0 0 1-.76 0L1.5 5.809v6.442Zm13-8.181v-.32a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25v.32L8 7.88Z"></path>
+								</svg>
+							</a>
+							<a href="http://github.com/Dietr1ch/">
+								<svg aria-hidden="true" viewBox="0 0 16 16" width="16" height="16" fill="#fff">
+									<path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 01-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 010 8c0-4.42 3.58-8 8-8z"></path>
+								</svg>
+							</a>
+						</div>
+					</footer>
+				</div>
+		</div>
+	</body>
 </html>

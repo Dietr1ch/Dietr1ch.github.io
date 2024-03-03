@@ -1,0 +1,157 @@
+@font-face {
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: 400;
+	src: local("Open Sans Regular"), local("OpenSans-Regular"), url(open-sans-regular.woff2) format("woff2");
+	font-display: block;
+}
+.paddingtop {
+	margin-top: 0.5em;
+	padding-top: 0.5em;
+}
+.paddingbot {
+	margin-bottom: 2em;
+	padding-bottom: 1em;
+}
+
+.centered {
+	justify-content: center;
+}
+.site-content {
+	justify-content: center;
+	max-width: 45em;
+}
+.narrow {
+	  max-width: 40em;
+}
+.spacer {
+	flex-grow: 1;
+}
+
+header,
+navbar,
+main,
+footer {
+	width: 100%;
+}
+.flex {
+  display: flex;
+}
+
+a,
+p,
+li
+{
+	color: #fff;
+	max-width: 40em;
+}
+p {
+	text-align: justify;
+}
+a {
+	background-color: transparent;
+}
+html, body {
+	display: grid;
+	height: 100%;
+	background-color: #222;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-align: justify;
+}
+
+/** Theme Styles **/
+body {
+	background-image: url("cloudy-sea.jpg");
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: cover;
+}
+
+header {
+	padding-top: 1.2em;
+	padding-bottom: 1.2em;
+}
+
+/** Transparency **/
+.dark-transparency {
+	background: #151515;
+	background: rgba(21, 21, 21, 0.7);
+}
+
+.medium-transparency {
+	background: #151515;
+	background: rgba(21, 21, 21, 0.5);
+}
+
+.light-transparency {
+	background: #151515;
+	background: rgba(21, 21, 21, 0.5);
+}
+
+.round5 {
+	border-radius: 0.5em;
+}
+
+.round5bot {
+	border-top-left-radius: 0em;
+	border-top-right-radius: 0em;
+	border-bottom-left-radius: 0.5em;
+	border-bottom-right-radius: 0.5em;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+	color: #fff;
+	font-weight: 700;
+	text-shadow: #111 0 0 10px;
+}
+#title {
+	margin: 0;
+	color: #fff;
+	font-size: 3.3em;
+	font-weight: 700;
+	text-shadow: #111 0 0 10px;
+}
+
+.left {
+	text-align: left;
+}
+
+.right {
+	text-align: right;
+}
+
+.no-h-padding {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.no-v-padding {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.padding-v-1em {
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.main-borders {
+	margin-top: 2em;
+	margin-bottom: 1em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.row {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
