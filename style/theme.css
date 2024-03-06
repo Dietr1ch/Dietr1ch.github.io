@@ -39,6 +39,10 @@ main,
 footer {
 	width: 100%;
 }
+navbar,
+footer {
+	user-select: none;
+}
 aside {
 	text-align: center;
 }
