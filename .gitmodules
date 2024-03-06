@@ -1,0 +1,4 @@
+[submodule "research/evaluating_nav_queries"]
+	path = research/evaluating_nav_queries
+	url = git@github.com:Dietr1ch/evaluating_nav_queries
+	branch = gh-pages
