@@ -79,9 +79,11 @@ html, body {
 /** Theme Styles **/
 body {
 	background-image: url("cloudy-sea.jpg");
-	background-repeat: no-repeat;
-	background-position: center bottom;
+	background-position-x: center;
+	background-position-y: top;
 	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
 header {
