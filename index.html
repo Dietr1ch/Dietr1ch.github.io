@@ -6,21 +6,13 @@
 		<title>Dietrich Daroch's Homepage</title>
 
 		<!-- Theme -->
-    <link href="/style/cloudy-sea.jpg" rel="preload" as="image">
-    <link href="/style/open-sans-regular.woff2" rel="preload" as="font">
+		<link href="/style/cloudy-sea.jpg" rel="preload" as="image">
+		<link href="/style/open-sans-regular.woff2" rel="preload" as="font" crossorigin="anonymous">
 		<link href="/style/theme.css" rel="stylesheet"/>
 		<link href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" rel="stylesheet" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
 		<!-- HTMX -->
 		<script src="https://unpkg.com/htmx.org@1.9.10/dist/htmx.min.js" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
 		<script src="https://unpkg.com/htmx.org@1.9.10/dist/ext/preload.js" integrity="sha384-NoiTdF/KjxH4wa6OHMdM4F6e/LIPNMcFBgOIINTTaczWo0vX1mWTOzckySqlGQS/" crossorigin="anonymous"></script>
-
-		<!-- Favicon -->
-		<link href="/icons/favicon.ico" rel="icon" sizes="16x16" type="image/x-icon">
-		<link href="/icons/16.png" rel="icon" sizes="16x16" type="image/png">
-		<link href="/icons/32.png" rel="icon" sizes="32x32" type="image/png">
-		<link href="/icons/180.png" rel="icon" sizes="180x180" type="image/png">
-		<link href="/icons/192.png" rel="icon" sizes="192x192" type="image/png">
-		<link href="/icons/512.png" rel="icon" sizes="512x512" type="image/png">
 
 		<!-- Metadata -->
 		<meta name="author" content="Dietrich Daroch">
@@ -39,11 +31,18 @@
 
 		<!-- Content -->
 		<link href="/tabs/about.html" rel="preload" as="document" type="text/html">
-
 		<meta name="theme-color" content="#222">
 
+		<!-- Favicon -->
+		<link href="/icons/favicon.ico" rel="icon" sizes="16x16" type="image/x-icon">
+		<link href="/icons/16.png" rel="icon" sizes="16x16" type="image/png">
+		<link href="/icons/32.png" rel="icon" sizes="32x32" type="image/png">
+		<link href="/icons/180.png" rel="icon" sizes="180x180" type="image/png">
+		<link href="/icons/192.png" rel="icon" sizes="192x192" type="image/png">
+		<link href="/icons/512.png" rel="icon" sizes="512x512" type="image/png">
+
 		<!-- Hacky extension to restore the Page from the URL's anchor -->
-		<script>
+		<script defer>
 (function(){
 	let default_anchor = "#about";
 	var initial_anchor = null;
