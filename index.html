@@ -6,10 +6,37 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
 		<title>Dietrich Daroch's Homepage</title>
 
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
 		<link href="style/theme.css" rel="stylesheet"/>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+
+		<script src="https://unpkg.com/htmx.org@1.9.10"></script>
+		<script src="https://unpkg.com/htmx.org/dist/ext/preload.js"></script>
 
 		<link href="foaf.rdf" rel="meta" title="FOAF" type="application/rdf+xml"/>
+
+    <!-- Hacky extension to restore the Page from the URL's anchor -->
+		<script>
+(function(){
+    let default_anchor = "#about";
+    var initial_anchor = null;
+
+    htmx.defineExtension('restore-anchor', {
+        init: function (apiRef) {
+            let anchor = decodeURI(window.location.hash);
+            initial_anchor = anchor != "" ? anchor : default_anchor;
+        },
+
+        onEvent : function(name, event) {
+            if (name === 'htmx:afterProcessNode') {
+                if (event.target.getAttribute('hx-push-url') == initial_anchor) {
+                    console.log(`Restoring state to ${initial_anchor} by clicking this button!`)
+                    event.target.click();
+                }
+            }
+        }
+    });
+})();
+		</script>
 	</head>
 	<body class="index">
 		<div class="pure-g centered">
@@ -19,39 +46,39 @@
 						<h1 id="title">Dietrich Daroch</h1>
 					</header>
 					<navbar class="pure-u-1 narrow">
-						<a href="/">Home</a>
+						<div class="tab-list" role="tablist">
+							<button class="pure-button"
+							        hx-target="#content"
+							        hx-get="tabs/about.html"
+							        preload
+							        hx-ext="restore-anchor"
+							        hx-push-url="#about"
+							        hx-history-target="#about"
+							        aria-controls="content">About me</button>
+							<button class="pure-button"
+							        hx-target="#content"
+							        hx-get="tabs/research.html"
+							        preload
+							        hx-ext="restore-anchor"
+							        hx-push-url="#research"
+							        hx-history-target="#research"
+							        aria-controls="content">Research</button>
+							<button class="pure-button"
+							        hx-target="#content"
+							        hx-get="tabs/résumé.html"
+							        preload
+							        hx-ext="restore-anchor"
+							        hx-push-url="#résumé"
+							        hx-history-target="#résumé"
+							        aria-controls="content">Résumé</button>
+						</div>
 					</navbar>
 				</div>
 				<div class="pure-g dark-transparency centered round5">
-					<main class="narrow">
-						<section id="Me" class="pure-u-1">
-							<h1>About me</h1>
-							<p>I'm a Software Engineer from Chile living in the SF Bay Area. I enjoy music, playing guitar, biking, snowboarding and playing video games.</p>
-							<p>I'm interested on Search and Planning; Distributed Databases and CS in general.</p>
-							<p>I can play guitar faster than you, I can play at more than 30km/h while on my bike :P</p>
-						</section>
-						<section id="Work" class="pure-u-1">
-							<h1>Work</h1>
-							<h2>Software Engineer</h1>
-							<p>I'm working at a startup to describe and search the things you can Do in the Internet.</p>
-						</section>
-						<section id="Research" class="pure-u-1">
-							<h1>Research</h1>
-							<h2>Linked Data</h2>
-							<p>In Linked Data navigational queries are expensive to compute as it requries navigating the graph across many possibly possibly servers.</p>
-							<p>We found a way to use the query itself to derive a consistent heuristic that makes A* available for computing Property Paths more effectively than uninformed Search Algorithms, which helps reducing the amount of nodes expanded to get the answers to a given query.</p>
-							<ul>
-								<li><a href="research/asld/">A* Star on Linked Data</a></li>
-							</ul>
-							<h2>Hierarchic Heuristic Search</h2>
-							<p>I'm experimenting with a way to abstract search spaces into a hierarchic space that can provide subgoals and better heuristics.</p>
-						</section>
-						<section id="Résumé" class="pure-u-1">
-							<h1>Résumé</h1>
-							<ul>
-								<li><a href="docs/cv-ddaroch.pdf">Résumé</a></li>
-							</ul>
-						</section>
+					  <main id="content"
+					        class="narrow"
+					        hx-history-elt
+					        hx-swap="innerHTML">
 					</main>
 				</div>
 				<div class="pure-g centered round5 paddingtop">

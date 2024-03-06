@@ -22,7 +22,7 @@
 	max-width: 45em;
 }
 .narrow {
-	  max-width: 40em;
+		max-width: 40em;
 }
 .spacer {
 	flex-grow: 1;
@@ -35,7 +35,14 @@ footer {
 	width: 100%;
 }
 .flex {
-  display: flex;
+	display: flex;
+}
+
+button {
+	background-color: transparent !important;
+	border: 1px solid #fff !important;
+	color: white !important;
+	border-radius 0.5em;
 }
 
 a,
@@ -71,6 +78,11 @@ body {
 header {
 	padding-top: 1.2em;
 	padding-bottom: 1.2em;
+}
+
+.card {
+	background: #515151;
+	background: rgba(21, 21, 21, 0.1);
 }
 
 /** Transparency **/
