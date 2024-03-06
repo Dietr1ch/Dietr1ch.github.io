@@ -5,6 +5,11 @@
 	src: local("Open Sans Regular"), local("OpenSans-Regular"), url(open-sans-regular.woff2) format("woff2");
 	font-display: block;
 }
+
+* {
+	color: #fff;
+}
+
 .paddingtop {
 	margin-top: 0.5em;
 	padding-top: 0.5em;
@@ -34,6 +39,10 @@ main,
 footer {
 	width: 100%;
 }
+aside {
+	text-align: center;
+}
+
 .flex {
 	display: flex;
 }
@@ -132,6 +141,12 @@ h6
 	text-shadow: #111 0 0 10px;
 }
 
+.text-bold {
+	font-weight: 700;
+}
+.text-muted {
+	color: #aaa;
+}
 .left {
 	text-align: left;
 }
