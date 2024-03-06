@@ -6,11 +6,13 @@
 		<title>Dietrich Daroch's Homepage</title>
 
 		<!-- Theme -->
+    <link href="/style/cloudy-sea.jpg" rel="preload" as="image">
+    <link href="/style/open-sans-regular.woff2" rel="preload" as="font">
 		<link href="/style/theme.css" rel="stylesheet"/>
 		<link href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" rel="stylesheet" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
 		<!-- HTMX -->
-		<script src="https://unpkg.com/htmx.org@1.9.10"></script>
-		<script src="https://unpkg.com/htmx.org/dist/ext/preload.js"></script>
+		<script src="https://unpkg.com/htmx.org@1.9.10/dist/htmx.min.js" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
+		<script src="https://unpkg.com/htmx.org@1.9.10/dist/ext/preload.js" integrity="sha384-NoiTdF/KjxH4wa6OHMdM4F6e/LIPNMcFBgOIINTTaczWo0vX1mWTOzckySqlGQS/" crossorigin="anonymous"></script>
 
 		<!-- Favicon -->
 		<link href="/icons/favicon.ico" rel="icon" sizes="16x16" type="image/x-icon">
@@ -35,6 +37,11 @@
 		<meta property="og:image:height" content="192">
 		<meta property="og:locale" content="en">
 
+		<!-- Content -->
+		<link href="/tabs/about.html" rel="preload" as="document" type="text/html">
+
+		<meta name="theme-color" content="#222">
+
 		<!-- Hacky extension to restore the Page from the URL's anchor -->
 		<script>
 (function(){
@@ -42,7 +49,7 @@
 	var initial_anchor = null;
 
 	htmx.defineExtension('restore-anchor', {
-			init: function (apiRef) {
+		init: function (apiRef) {
 			let anchor = decodeURI(window.location.hash);
 			initial_anchor = anchor != "" ? anchor : default_anchor;
 		},
@@ -65,8 +72,8 @@
 					<header class="pure-u-1 narrow">
 						<h1 id="title">Dietrich Daroch</h1>
 					</header>
-					<navbar class="pure-u-1 narrow">
-						<div class="tab-list" role="tablist">
+					<navbar class="pure-u-1 narrow" hx-ext="preload">
+						<div class="tab-list">
 							<button class="pure-button"
 							        hx-target="#content"
 							        hx-get="/tabs/about.html"
