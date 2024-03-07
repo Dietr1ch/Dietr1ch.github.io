@@ -85,9 +85,9 @@ body {
 	background-image: url("cloudy-sea.jpg");
 	background-position-x: center;
 	background-position-y: top;
-	background-size: cover;
-	background-repeat: no-repeat;
 	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 header {
@@ -159,32 +159,5 @@ h6
 
 .right {
 	text-align: right;
-}
-
-.no-h-padding {
-	padding-left: 0;
-	padding-right: 0;
-}
-
-.no-v-padding {
-	padding-top: 0;
-	padding-bottom: 0;
-}
-
-.padding-v-1em {
-	padding-top: 1em;
-	padding-bottom: 1em;
-}
-
-.main-borders {
-	margin-top: 2em;
-	margin-bottom: 1em;
-	padding-top: 1em;
-	padding-bottom: 1em;
-}
-
-.row {
-	margin-left: 0px;
-	margin-right: 0px;
 }
 
