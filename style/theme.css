@@ -18,6 +18,7 @@ header > h1 {
 }
 
 button {
+	min-width: 8em;
 	padding: .5em 1em;
 	text-decoration: none;
 	font-size: 100%;
@@ -47,6 +48,15 @@ button {
 .column > div > * {
 	margin: 1em;
 }
+.narrowcolumn {
+	height: 90%;
+	width: 90%;
+	margin: auto;
+
+	display: none;
+	flex-direction: column;
+	align-items: center;
+}
 
 .shadow {
 	background: #333;
@@ -66,6 +76,24 @@ button {
 navbar,
 footer {
 	user-select: none;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+@media screen and (max-width: 30em) {
+	navbar,
+	footer {
+		flex-direction: column;
+	}
+}
+@media screen and (max-width: 15em) {
+	.column {
+		display: none;
+	}
+	.narrowcolumn {
+		display: flex;
+	}
 }
 .content {
 	border-radius: 0.5em;
