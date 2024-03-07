@@ -29,10 +29,6 @@
 		<meta property="og:image:height" content="192">
 		<meta property="og:locale" content="en">
 
-		<!-- Content -->
-		<link href="/tabs/about.html" rel="preload" as="document" type="text/html">
-		<meta name="theme-color" content="#222">
-
 		<!-- Favicon -->
 		<link href="/icons/favicon.ico" rel="icon" sizes="16x16" type="image/x-icon">
 		<link href="/icons/16.png" rel="icon" sizes="16x16" type="image/png">
@@ -44,18 +40,17 @@
 		<!-- Hacky extension to restore the Page from the URL's anchor -->
 		<script defer>
 (function(){
-	let default_anchor = "#about";
 	var initial_anchor = null;
 
 	htmx.defineExtension('restore-anchor', {
 		init: function (apiRef) {
 			let anchor = decodeURI(window.location.hash);
-			initial_anchor = anchor != "" ? anchor : default_anchor;
+			initial_anchor = anchor != "" ? anchor : null;
 		},
 
 		onEvent : function(name, event) {
-			if (name === 'htmx:afterProcessNode') {
-				if (event.target.getAttribute('hx-push-url') == initial_anchor) {
+			if (initial_anchor != null) {
+				if (name === 'htmx:afterProcessNode' && event.target.getAttribute('hx-push-url') == initial_anchor) {
 					event.target.click();
 				}
 			}
@@ -101,10 +96,17 @@
 					</navbar>
 				</div>
 				<div class="pure-g dark-transparency centered round5">
-					  <main id="content"
-					        class="narrow"
-					        hx-history-elt
-					        hx-swap="innerHTML">
+					<main id="content"
+					      class="narrow"
+					      hx-history-elt
+					      hx-swap="innerHTML">
+						<article>
+							<meta property="article:modified_time" content="2024-03-06T16:00:00+00:00"/>
+							<h1>About me</h1>
+								<p>I'm a Software Engineer from Chile living in the SF Bay Area. I enjoy music, playing guitar, biking, snowboarding and playing video games.</p>
+								<p>I'm interested on Search and Planning; Distributed Databases and CS in general.</p>
+								<p>I can play guitar faster than you, at least at 25km/h while biking 🚵🏼‍♂️ :P</p>
+							</article>
 					</main>
 				</div>
 				<div class="pure-g centered round5 paddingtop">
