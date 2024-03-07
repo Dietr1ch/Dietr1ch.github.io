@@ -29,9 +29,6 @@
 .narrow {
 		max-width: 40em;
 }
-.spacer {
-	flex-grow: 1;
-}
 
 header,
 navbar,
@@ -56,6 +53,9 @@ button {
 	border: 1px solid #fff !important;
 	color: white !important;
 	border-radius 0.5em;
+	&:hover, &:focus {
+		background-color: #222 !important;
+	}
 }
 
 a,
@@ -72,7 +72,6 @@ a {
 	background-color: transparent;
 }
 html, body {
-	display: grid;
 	height: 100%;
 	background-color: #222;
 	-webkit-font-smoothing: antialiased;
