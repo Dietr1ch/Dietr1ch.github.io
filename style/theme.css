@@ -9,9 +9,12 @@
 :root {
 	--fg-color: #fff;
 	--fg-color-alt: #aaa;
+
+	--bg-void: #444;
 	--bg-img: url("cloudy-sea80.webp");
+
 	--bg-color: rgba(21, 21, 21, 0.7);
-	--bg-color-alt: rgba(21, 21, 21, 0.6);
+	--bg-color-alt: rgba(21, 21, 21, 0.4);
 	--shadow-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -134,7 +137,7 @@ a {
 
 body {
 	margin: 0;
-	background-color: var(--bg-color-alt);
+	background-color: var(--bg-void);
 	background-image: var(--bg-img);
 	background-position-x: center;
 	background-position-y: top;
