@@ -10,10 +10,8 @@
 	--fg-color: #fff;
 	--fg-color-alt: #aaa;
 	--bg-img: url("cloudy-sea80.webp");
-	--bg-color: #333;
-	--bg-color-alt: #222;
-	--bg-alpha-color: rgba(21, 21, 21, 0.7);
-	--bg-alpha-color-alt: rgba(21, 21, 21, 0.2);
+	--bg-color: rgba(21, 21, 21, 0.7);
+	--bg-color-alt: rgba(21, 21, 21, 0.6);
 	--shadow-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -76,7 +74,6 @@ button {
 
 .shadow {
 	background: var(--bg-color);
-	background: var(--bg-alpha-color);
 	box-shadow: 0 1em 3em 0 var(--shadow-color), 0 1em 3em 0 var(--shadow-color);
 }
 .round {
@@ -150,8 +147,7 @@ body {
 	border-radius: 0.5em;
 	margin-top: 1em;
 	margin-bottom: 1em;
-	background: var(--bg-alpha-color);
-	background: var(--bg-alpha-color-alt);
+	background: var(--bg-color-alt);
 	padding-left: 0.5em;
 	padding-right: 0.5em;
 	padding-top: 0.5em;
