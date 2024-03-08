@@ -6,9 +6,20 @@
 	font-display: block;
 }
 
+:root {
+	--fg-color: #fff;
+	--fg-color-alt: #aaa;
+	--bg-img: url("cloudy-sea80.webp");
+	--bg-color: #333;
+	--bg-color-alt: #222;
+	--bg-alpha-color: rgba(21, 21, 21, 0.7);
+	--bg-alpha-color-alt: rgba(21, 21, 21, 0.2);
+	--shadow-color: rgba(0, 0, 0, 0.2);
+}
+
 * {
 	font-family: "Open Sans", "sans-serif";
-	color: #fff;
+	color: var(--fg-color);
 }
 
 html,
@@ -29,11 +40,11 @@ button {
 	text-decoration: none;
 	font-size: 100%;
 	background-color: transparent !important;
-	border: 1px solid #fff !important;
-	color: white !important;
+	border: 1px solid var(--fg-color) !important;
+	color: var(--fg-color) !important;
 	border-radius 0.5em;
 	&:hover, &:focus {
-		background-color: #222 !important;
+		background-color: var(--bg-color-alt) !important;
 	}
 }
 
@@ -64,9 +75,9 @@ button {
 }
 
 .shadow {
-	background: #333;
-	background: rgba(21, 21, 21, 0.7);
-	box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2), 0 1em 3em 0 rgba(0, 0, 0, 0.2);
+	background: var(--bg-color);
+	background: var(--bg-alpha-color);
+	box-shadow: 0 1em 3em 0 var(--shadow-color), 0 1em 3em 0 var(--shadow-color);
 }
 .round {
 	border-radius: 0.5em;
@@ -126,8 +137,8 @@ a {
 
 body {
 	margin: 0;
-	background-color: #222;
-	background-image: url("cloudy-sea80.webp");
+	background-color: var(--bg-color-alt);
+	background-image: var(--bg-img);
 	background-position-x: center;
 	background-position-y: top;
 	background-attachment: fixed;
@@ -139,8 +150,8 @@ body {
 	border-radius: 0.5em;
 	margin-top: 1em;
 	margin-bottom: 1em;
-	background: #444;
-	background: rgba(21, 21, 21, 0.2);
+	background: var(--bg-alpha-color);
+	background: var(--bg-alpha-color-alt);
 	padding-left: 0.5em;
 	padding-right: 0.5em;
 	padding-top: 0.5em;
@@ -161,5 +172,5 @@ h6
 	font-weight: bold;
 }
 .text-muted {
-	color: #aaa;
+	color: var(--fg-color-alt);
 }
