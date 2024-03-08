@@ -10,7 +10,7 @@
 		<link href="/style/open-sans-regular.woff2" rel="preload" fetchpriority="high" as="font" crossorigin="anonymous"/>
 		<link href="/style/theme.css" rel="stylesheet"/>
 		<!-- HTMX -->
-		<script async src="/lib/htmx.pre.js" fetchpriority="high" integrity="sha384-pJCNdQAQA/qOaFtuqF+6J3tVw0e2XqGkOWf/3euBZ42xWl871uN1yjPpaqiajEhF"></script>
+		<script async src="/lib/htmx.pre.js" fetchpriority="high" integrity="sha384-vzkWNx+lFL2u0aZ8dtGwQCNvRjOt2Y+5tx61I+tgztyNkh8YbytPmWNNT80m0gLz"></script>
 
 		<!-- Metadata -->
 		<meta name="author" content="Dietrich Daroch"/>
@@ -34,28 +34,6 @@
 		<link href="/icons/180.png" rel="icon" sizes="180x180" type="image/png"/>
 		<link href="/icons/192.png" rel="icon" sizes="192x192" type="image/png"/>
 		<link href="/icons/512.png" rel="icon" sizes="512x512" type="image/png"/>
-
-		<!-- Hacky extension to restore the Page from the URL's anchor -->
-		<script defer>
-(function(){
-	var initial_anchor = null;
-
-	htmx.defineExtension('restore-anchor', {
-		init: function (apiRef) {
-			let anchor = decodeURI(window.location.hash);
-			initial_anchor = anchor != "" ? anchor : null;
-		},
-
-		onEvent : function(name, event) {
-			if (initial_anchor != null) {
-				if (name === 'htmx:afterProcessNode' && event.target.getAttribute('hx-push-url') == initial_anchor) {
-					event.target.click();
-				}
-			}
-		}
-	});
-})();
-		</script>
 	</head>
 	<body>
 		<div class="column">
