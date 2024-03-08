@@ -40,12 +40,12 @@ button {
 	padding: .5em 1em;
 	text-decoration: none;
 	font-size: 100%;
-	background-color: transparent !important;
-	border: 1px solid var(--fg-color) !important;
-	color: var(--fg-color) !important;
+	background-color: transparent;
+	border: 1px solid var(--fg-color);
+	color: var(--fg-color);
 	border-radius 0.5em;
 	&:hover, &:focus {
-		background-color: var(--bg-color-alt) !important;
+		background-color: var(--bg-color-alt);
 	}
 }
 
