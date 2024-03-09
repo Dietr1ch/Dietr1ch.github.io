@@ -55,7 +55,7 @@ body {
 	height: 100%;
 }
 
-header > h1 {
+h1 {
 	margin: 0;
 	font-size: 3.3em;
 	font-weight: bolder;
