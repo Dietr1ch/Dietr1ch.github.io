@@ -41,7 +41,7 @@
 				<header>
 					<h1>Dietrich Daroch</h1>
 				</header>
-				<navbar hx-ext="preload" preload="mouseover">
+				<navbar class="dont-print" hx-ext="preload" preload="mouseover">
 					<button hx-target="#main_content"
 					        hx-get="/tabs/about.html"
 					        preload
@@ -63,6 +63,7 @@
 					        hx-push-url="#résumé"
 					        hx-history-target="#résumé"
 					        aria-controls="main_content">Résumé</button>
+				</navbar>
 			</div>
 			<div class="content shadow">
 				<main id="main_content">
@@ -75,7 +76,7 @@
 					</article>
 				</main>
 			</div>
-			<div class="footer">
+			<div class="footer dont-print">
 				<footer>
 					<a href="mailto:dietrich@daroch.me"
 					   title="Email me">

@@ -17,6 +17,32 @@
 	--bg-color-alt: rgba(21, 21, 21, 0.4);
 	--shadow-color: rgba(0, 0, 0, 0.2);
 }
+@media print {
+	:root {
+		--fg-color: #000;
+		--fg-color-alt: #999 ;
+
+		--bg-void: #fff;
+		--bg-img: none;
+
+		--bg-color: #eee;
+		--bg-color-alt: #ddd;
+		--shadow-color: none;
+	}
+	h1,h2,h3,h4,h5,h6 {
+		page-break-before: auto;
+	}
+	.dont-print {
+		display: none;
+	}
+	section {
+		page-break-inside: avoid;
+	}
+	.card {
+		page-break-after: auto;
+		page-break-inside: avoid;
+	}
+}
 
 * {
 	font-family: "Open Sans", "sans-serif";
@@ -131,6 +157,7 @@ aside {
 	text-align: center;
 }
 .icon {
+	fill: var(--fg-color);
 	padding: 0.5em;
 }
 
