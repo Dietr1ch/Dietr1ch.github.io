@@ -44,16 +44,16 @@
 	}
 }
 
+/* Override first-paint inline style */
 * {
-	font-family: "Open Sans", "sans-serif";
-	color: var(--fg-color);
+	font-family: "Open Sans", "sans-serif" !important;
+	color: var(--fg-color) !important;
 }
-
 html,
 body {
-	width: 100%;
-	height: 100%;
-	background-color: var(--bg-void);
+	width: 100% !important;
+	height: 100% !important;
+	background-color: var(--bg-void) !important;
 }
 
 h1 {
