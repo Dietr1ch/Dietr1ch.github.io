@@ -118,6 +118,9 @@ footer {
 		align-items: center;
 	}
 }
+aside {
+	text-align center;
+}
 .content {
 	border-radius: 0.5em;
 }
