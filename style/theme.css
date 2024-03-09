@@ -145,7 +145,7 @@ footer {
 	}
 }
 aside {
-	text-align center;
+	text-align: center;
 }
 .content {
 	border-radius: 0.5em;
