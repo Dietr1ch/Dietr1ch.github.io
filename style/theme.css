@@ -130,6 +130,9 @@ aside {
 
 	text-align: center;
 }
+.icon {
+	padding: 0.5em;
+}
 
 p {
 	text-align: justify;
