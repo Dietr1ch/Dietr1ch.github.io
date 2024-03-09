@@ -101,7 +101,7 @@ button {
 	align-items: center;
 }
 
-.shadow {
+.surface {
 	background: var(--bg-color);
 	box-shadow: 0 1em 3em 0 var(--shadow-color), 0 1em 3em 0 var(--shadow-color);
 }
