@@ -21,14 +21,17 @@
 		--bg-color-alt: #ddd;
 		--shadow-color: none;
 	}
-	h1,h2,h3,h4,h5,h6 {
-		page-break-before: auto;
-	}
 	.dont-print {
 		display: none;
 	}
+	.multi-col {
+		columns: 2;
+	}
 	section {
 		page-break-inside: avoid;
+	}
+	p {
+		font-size: small;
 	}
 	.card {
 		page-break-after: auto;
@@ -177,6 +180,8 @@ aside {
 
 p {
 	text-align: justify;
+	word-break: break-all;
+	word-break: auto-phrase;
 }
 a {
 	background-color: transparent;
