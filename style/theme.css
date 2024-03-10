@@ -37,21 +37,21 @@
 }
 
 /* Override first-paint inline style */
-html,body {
+html,
+body {
 	width: 100% !important;
 	height: 100% !important;
 	margin: 0 !important;
-	overflow: scroll !important;
 }
 
 /* Body background */
 body {
 	background-color: var(--bg-void) !important;
-	background-size: cover;
-	background-position-x: center !important;
+	background-position-x: center;
 	background-position-y: top;
-	background-repeat: no-repeat;
 	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
 	background-image: var(--bg-img);
 }
 
@@ -71,6 +71,7 @@ body {
 
 /* Style */
 h1 {
+	margin: 0.2em;
 	font-size: 3.3em;
 	font-weight: bolder;
 }
@@ -104,7 +105,7 @@ button {
 	width: 90%;
 }
 .column > div > * {
-	margin: 1em;
+	margin: 0 1em;
 }
 .narrowcolumn {
 	width: 90%;
