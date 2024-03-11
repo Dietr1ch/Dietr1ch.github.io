@@ -109,14 +109,6 @@ button {
 .column > div > * {
 	margin: 0 1em;
 }
-.narrowcolumn {
-	width: 90%;
-	margin: auto;
-
-	display: none;
-	flex-direction: column;
-	align-items: center;
-}
 
 .surface {
 	background: var(--bg-color);
@@ -135,6 +127,11 @@ button {
 	border-bottom-left-radius: 0.5em;
 	border-bottom-right-radius: 0.5em;
 }
+
+.surprise {
+	display: none;
+}
+
 navbar,
 footer {
 	user-select: none;
@@ -153,8 +150,8 @@ footer {
 	.column {
 		display: none;
 	}
-	.narrowcolumn {
-		display: flex;
+	.surprise {
+		display: flex !important;
 	}
 	body {
 		display: flex;
