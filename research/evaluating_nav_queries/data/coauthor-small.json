@@ -1,0 +1,57 @@
+{
+  "nodes": [
+    {"id":  0, "name": "A0", "type": "Auth",     "neighF": [], "neighB": [], "expanded": false, "discovered": true },
+    {"id":  1, "name": "A1", "type": "Auth",     "neighF": [], "neighB": [], "expanded": false, "discovered": false},
+    {"id":  2, "name": "A2", "type": "Auth",     "neighF": [], "neighB": [], "expanded": false, "discovered": false},
+    {"id":  3, "name": "A3", "type": "Auth",     "neighF": [], "neighB": [], "expanded": false, "discovered": false},
+
+    {"id":  4, "name": "P0", "type": "Publ",     "neighF": [], "neighB": [], "expanded": false, "discovered": false},
+    {"id":  5, "name": "P1", "type": "Publ",     "neighF": [], "neighB": [], "expanded": false, "discovered": false},
+    {"id":  6, "name": "P2", "type": "Publ",     "neighF": [], "neighB": [], "expanded": false, "discovered": false},
+    {"id":  7, "name": "P3", "type": "Publ",     "neighF": [], "neighB": [], "expanded": false, "discovered": false},
+    {"id":  8, "name": "P4", "type": "Publ",     "neighF": [], "neighB": [], "expanded": false, "discovered": false},
+
+    {"id":  9, "name":  "n", "type": "authNAME", "neighF": [], "neighB": [], "expanded": false, "discovered": false},
+    {"id": 10, "name":  "n", "type": "authName", "neighF": [], "neighB": [], "expanded": false, "discovered": false},
+    {"id": 11, "name":  "n", "type": "authName", "neighF": [], "neighB": [], "expanded": false, "discovered": false},
+    {"id": 12, "name":  "n", "type": "authName", "neighF": [], "neighB": [], "expanded": false, "discovered": false},
+
+    {"id": 13, "name":  "t", "type": "publTitle", "neighF": [], "neighB": [], "expanded": false, "discovered": false},
+    {"id": 14, "name":  "t", "type": "publTitle", "neighF": [], "neighB": [], "expanded": false, "discovered": false},
+    {"id": 15, "name":  "t", "type": "publTitle", "neighF": [], "neighB": [], "expanded": false, "discovered": false},
+    {"id": 16, "name":  "t", "type": "publTitle", "neighF": [], "neighB": [], "expanded": false, "discovered": false},
+    {"id": 17, "name":  "t", "type": "publTitle", "neighF": [], "neighB": [], "expanded": false, "discovered": false},
+
+    {"id": 18, "name":  "F", "type": "Facebook", "neighF": [], "neighB": [], "expanded": false, "discovered": false},
+    {"id": 19, "name":  "F", "type": "Facebook", "neighF": [], "neighB": [], "expanded": false, "discovered": false},
+    {"id": 20, "name":  "F", "type": "Facebook", "neighF": [], "neighB": [], "expanded": false, "discovered": false}
+  ],
+  "links": [
+    {"source": 0, "target":  4},
+    {"source": 0, "target":  5},
+    {"source": 0, "target":  6},
+    {"source": 0, "target":  7},
+
+    {"source": 1, "target":  4},
+    {"source": 1, "target":  8},
+
+    {"source": 2, "target":  7},
+
+    {"source": 3, "target":  7},
+
+    {"source": 0, "target":  9},
+    {"source": 1, "target": 10},
+    {"source": 2, "target": 11},
+    {"source": 3, "target": 12},
+
+    {"source": 4, "target": 13},
+    {"source": 5, "target": 14},
+    {"source": 6, "target": 15},
+    {"source": 7, "target": 16},
+    {"source": 8, "target": 17},
+
+    {"source": 0, "target": 18},
+    {"source": 1, "target": 19},
+    {"source": 2, "target": 20}
+  ]
+}

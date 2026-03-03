@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!-- https://www.w3.org/RDF/Validator/ -->
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/" >
+  <rdf:Description rdf:about="http://www.w3.org/">
+    <dc:title>Dietrich Daroch</dc:title>
+  </rdf:Description>
+	<foaf:Person>
+		<foaf:name>Dietrich Daroch</foaf:name>
+		<foaf:givenName>Dietrich</foaf:givenName>
+		<foaf:familyName>Daroch</foaf:familyName>
+		<foaf:birthday>1990-10-10</foaf:birthday>
+		<foaf:mbox rdf:resource="mailto:dietrich@daroch.me" />
+		<foaf:homepage rdf:resource="https://dietrich.daroch.me" />
+		<foaf:schoolHomepage rdf:resource="www.uc.cl" />
+    <foaf:img rdf:resource="/i/me.webp" />
+	</foaf:Person>
+</rdf:RDF>
