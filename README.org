@@ -1,0 +1,4 @@
+#+title: My personal website
+
+* Info
+This contains just the raw output files that [[https://github.com/Dietr1ch/blorg][blorg]] outputs.
