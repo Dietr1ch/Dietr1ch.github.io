@@ -2,3 +2,5 @@
 
 * Info
 This contains just the raw output files that [[https://github.com/Dietr1ch/blorg][blorg]] outputs.
+
+This is served by [[https://docs.github.com/en/pages][GitHub pages]]
