@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+FN;CHARSET=UTF-8:Dietrich Daroch
+N;CHARSET=UTF-8:Daroch;Dietrich;;;
+GENDER:M
+EMAIL;CHARSET=UTF-8;type=HOME,INTERNET:Dietrich@Daroch.me
+URL;CHARSET=UTF-8:https://dietrich.daroch.me/
+X-SOCIALPROFILE;TYPE=Telegram:https://t.me/Dietr1ch
+X-SOCIALPROFILE;TYPE=Bluesky:https://bsky.app/profile/dietrich.daroch.me
+REV:2026-03-23T10:00:00.067Z
+END:VCARD
